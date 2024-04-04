@@ -1,0 +1,180 @@
+/* ########################################################## */
+/* ################### Main definitions ##################### */
+
+@font-face {
+    font-family: 'Cascadia Code PL';
+    src: url('CascadiaCodePL.ttf') format('truetype'),
+        url('CascadiaCodePL.woff') format('woff'),
+		url('CascadiaCodePL.woff2') format('woff2');
+    font-style: normal;
+    font-display: block;
+}
+
+* {
+	font-family: 'Cascadia Code PL';
+	color: #222222;
+	font-weight: 380;
+}
+
+li {
+	list-style-type: none;
+	margin: 5px 0px;
+}
+
+hr { display: block;
+	width: 450px;
+	height: 2px;
+	border: 0;
+	border-top:
+	1px solid #222222;
+	margin: 1em 0;
+	padding: 0;
+}
+
+body {
+	background-color: #FFFFFF;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	height: 100%;
+	margin: 0;
+	font-size: 120%;
+}
+
+
+/* ########################################################## */
+/* ####################### Classes ########################## */
+
+/* center content */
+.content {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+
+.container {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+	width: 60%;
+}
+
+.mainTitle {
+	margin-top: 90px;
+}
+
+.sectionTitle {
+	text-align: left;
+	margin-top: 40px;
+	width: 100%;
+	margin-left: 60px;
+}
+
+.downloads {
+	text-align: left;
+	width: 100%;
+	margin-left: 60px;
+}
+
+.sectionText {
+	text-align: left;
+	margin-top: 20px;
+}
+
+.header {
+	background-color: #EEEEEE;
+	padding-top: 18px;
+	padding-bottom: 18px;
+	display: flex;
+	flex-direction: row;
+	align-items: left;
+	justify-content: flex-start;
+	width: 100%;
+}
+
+.headerItem {
+	font-size: 140%;
+	text-decoration: none;
+	font-weight: 450;
+
+	margin-left: 30px;
+	margin-right: 55px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+
+	color: #222222;
+}
+
+.flex {
+	display: flex;
+}
+
+.miniText {
+	margin: 0;
+	font-size: 70%;
+	color: #888;
+	margin-bottom: 18px;
+}
+
+.tinyTitle {
+	font-size:130%;
+	color: #3391ff;
+	margin-top: 30px;
+}
+
+.aboutLine {
+	margin-top: 12px;
+	margin-bottom: 0px;
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+.footerTop {
+	margin-top: 25px;
+	margin-bottom: 15px;
+}
+
+.footerMiddle {
+	margin: 0px;
+}
+
+.footerBottom {
+	margin-bottom: 60px;
+	margin-top: 20px;
+}
+
+.break {
+	margin-top: 20px;
+	margin-bottom: 0px;
+}
+
+.biggerBreak {
+	margin-top: 45px;
+	margin-bottom: 0px;
+}
+
+/* ########################################################## */
+/* ############# Animations and responsivity ################ */
+
+@media screen and (max-width: 489px) {
+	body {
+		font-size: 96%;
+	}
+	hr {
+		width: 340px;
+	}
+	h1 {
+		font-size: 180%;
+	}
+	#title {
+		padding: 36px 0px;
+	}
+}
+
+@media (hover: none) {
+	#contact {
+		margin-bottom: 20px;
+	}
+}
