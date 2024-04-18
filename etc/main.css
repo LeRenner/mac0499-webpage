@@ -10,6 +10,13 @@
     font-display: block;
 }
 
+@font-face {
+    font-family: 'Noto Sans';
+    src: url('NotoSans.ttf') format('truetype');
+    font-style: normal;
+    font-display: block;
+}
+
 * {
 	font-family: 'Cascadia Code PL';
 	color: #222222;
@@ -17,8 +24,8 @@
 }
 
 li {
-	list-style-type: none;
-	margin: 5px 0px;
+	list-style-type: circle;
+	margin-bottom: 14px;
 }
 
 hr { display: block;
@@ -63,6 +70,7 @@ body {
 
 .mainTitle {
 	margin-top: 90px;
+	font-size: 230%;
 }
 
 .sectionTitle {
@@ -70,17 +78,50 @@ body {
 	margin-top: 40px;
 	width: 100%;
 	margin-left: 60px;
+	margin-bottom:35px;
 }
 
 .downloads {
 	text-align: left;
 	width: 100%;
 	margin-left: 60px;
+	margin-bottom: 10px;
+}
+
+.downloadsTitle {
+	text-align: left;
+	width: 100%;
+	margin-left: 60px;
+	margin-bottom: 5px;
+	margin-top: 45px;
+}
+
+.underTitle {
+	font-size: 160%;
+	width: 75%;
+	text-align: center;
+	margin-bottom: 15px;
+}
+
+.underUnderTitle {
+	font-size: 120%;
+	width: 100%;
+	text-align: center;
+	margin-top: 0;
+	color: #444
+}
+
+.author {
+	font-size: 110%;
+	color: #444;
+	margin-top: 36px;
 }
 
 .sectionText {
 	text-align: left;
-	margin-top: 20px;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	text-indent: 50px;
 }
 
 .header {
@@ -153,6 +194,10 @@ body {
 .biggerBreak {
 	margin-top: 45px;
 	margin-bottom: 0px;
+}
+
+.notoSans {
+	font-family: 'Noto Sans';
 }
 
 /* ########################################################## */
