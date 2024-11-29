@@ -24,22 +24,33 @@
                 Este Trabalho de Conclusão de Curso tem como objetivo a análise das características positivas e negativas de sistemas descentralizados de envio de mensagens pela internet, entrando em detalhe sobre suas diferentes características, e posteriormente buscando a implementação de um protótipo funcional.
             </p>
             <p class="sectionText notoSans">
-                O contexto no qual esta monografia se encontra é significante, dado o processo intenso de centralização pelo qual a internet moderna tem passado. Seja no mercado de provedores de hospedagem web, na arquitetura do Sistema de Nomes de Domínios (DNS), ou em programas de computador amplamente utilizados, a adoção de protocolos e sistemas descentralizados tem diminuído muito ao longo das últimas duas décadas. Dessa forma, este trabalho busca discutir as vantagens e limitações de protocolos distribuidos de envio de mensagens via redes de computadores.
+                O contexto no qual esta monografia se encontra é significante, dado o processo intenso de centralização pelo qual a internet moderna tem passado. Seja no mercado de provedores de hospedagem web, na arquitetura do Sistema de Nomes de Domínios (DNS), ou em programas mensageiros amplamente utilizados, a adoção de protocolos e sistemas descentralizados tem diminuído muito ao longo das últimas duas décadas. Dessa forma, este trabalho busca discutir as vantagens e limitações de protocolos distribuidos de envio de mensagens via redes de computadores.
             </p>
             <p class="sectionText notoSans">
-                O texto deste trabalho será organizado em cinco capítulos. O primeiro capítulo é dedicado a definir conceitos e definições importantes para o trabalho. O seguinte é dedicado a analisar implementações de protocolos de envio de mensagens de código aberto já existentes, buscando entender suas diferentes características, funcionalidades, e desvantagens. O terceiro capítulo definirá, em detalhes, os requisitos que o protótipo funcional que será implementado precisa ter, buscando compreender a maior quantidade de funcionalidades possível, sem comprometer em segurança ou no seu funcionamento. O quarto capítulo do trabalho compreenderá considerações sobre a implementação desse protocolo, considerando sua performance e funcionamento.
+                A monografia deste trabalho é organizada em cinco capítulos. O primeiro capítulo é dedicado a definir conceitos e definições importantes no contexto de um protocolo descentralizado. O seguinte é dedicado a analisar implementações de protocolos de envio de mensagens de código aberto já existentes, buscando entender suas diferentes características, funcionalidades, e desvantagens. O terceiro capítulo define, em detalhes, os requisitos que são escolhidos, e a arquitetura do projeto de protocolo que é desenvolvido ao longo deste trabalho. O quarto capítulo contém testes de performance e conclusões que podem ser tiradas da implementação que foi deselvolvida. Por fim, o último capítulo traz uma discussão mais abrangente sobre o projeto, e discute trabalhos futuros que podem ser feitos a partir deste.
             </p>
-
+            <p class="sectionText notoSans">
+                A arquitetura híbrida proposta para o projeto de protocolo utiliza serviços ocultos do Tor na comunicação entre usuários. Cada usuário hospeda seu próprio serviço oculto com um par de chaves público-privadas e expõe uma API acessível por outros usuários, permitindo funcionalidades como envio de mensagens, verificação de status de amizade e estabelecimento de conexões P2P diretas. A comunicação padrão esconde o IP, mas, para reduzir latência, usuários podem optar por conexões diretas ao adicionarem outros como "amigos". Nesse modelo, a conexão P2P é estabelecida apenas quando ambos os usuários estão online, possuem o chat aberto e confiam um no outro.
+            </p>
+        
             <br>
 
-            <h2 class="downloadsTitle">Links relevantes:</h2>
+            <h2 class="downloadsTitle">Links relevantes (autocontido, .zip):</h2>
 
             <ul class="downloads">
-                <li>Download da versão atual da monografia: <a href="https://linux.ime.usp.br/~renner/MAC0499/tese.pdf" target="_blank">tese.pdf</a></li>
-                <li>Repositório do código fonte da monografia: <a href="https://github.com/LeRenner/mac0499-dissertation" target="_blank">mac0499-dissertation</a></li>
-                <li>Repositório com o código fonte desta página: <a href="https://github.com/LeRenner/mac0499-webpage" target="_blank">mac0499-webpage</a></li>
-                <li>Repositório com a imagem de docker usada para automaticamente compilar a monografia: <a href="https://github.com/LeRenner/mac0499-latex-cicd" target="_blank">mac0499-latex-cicd</a></li>
-                <li>Repositório com o código da implementação do protocolo: <a href="https://github.com/LeRenner/mac0499-prototype" target="_blank">mac0499-prototype</a></li>
+                <li>Download da versão final da monografia: <a href="tese.pdf" target="_blank">tese.pdf</a></li>
+                <li>Repositório do código fonte da monografia: <a href="mac0499-dissertation-main.zip" target="_blank">mac0499-dissertation.zip</a></li>
+                <li>Repositório com o código fonte desta página: <a href="mac0499-webpage-main.zip" target="_blank">mac0499-webpage.zip</a></li>
+                <li>Repositório com a imagem de docker usada para automaticamente compilar a monografia: <a href="mac0499-latex-cicd-main.zip" target="_blank">mac0499-latex-cicd.zip</a></li>
+                <li>Repositório com o código da implementação do protocolo: <a href="mac0499-prototype-main.zip" target="_blank">mac0499-prototype.zip</a></li>
+            </ul>
+
+            <h2 class="downloadsTitle">Links relevantes (externos):</h2>
+
+            <ul>
+                <li>Repositório do código fonte da monografia (externo, github): <a href="https://github.com/LeRenner/mac0499-dissertation" target="_blank">mac0499-dissertation</a></li>
+                <li>Repositório com o código fonte desta página (externo, github): <a href="https://github.com/LeRenner/mac0499-webpage" target="_blank">mac0499-webpage</a></li>
+                <li>Repositório com o código da implementação do protocolo (externo, github): <a href="https://github.com/LeRenner/mac0499-prototype" target="_blank">mac0499-prototype</a></li>
             </ul>
 
             <br style="margin-bottom: 65px;">
