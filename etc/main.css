@@ -23,6 +23,11 @@
 	font-weight: 380;
 }
 
+b {
+	font-weight: 600;
+	font-family: "Noto Sans";
+}
+
 li {
 	list-style-type: circle;
 	margin-bottom: 14px;
@@ -65,12 +70,14 @@ body {
 	flex-direction: column;
 	justify-content: flex-start;
 	align-items: center;
-	width: 60%;
+	width: 1000px;
 }
 
 .mainTitle {
 	margin-top: 90px;
-	font-size: 230%;
+	font-size: 180%;
+	margin-bottom: 50px;
+	text-align: center;
 }
 
 .sectionTitle {
@@ -108,13 +115,15 @@ body {
 	width: 100%;
 	text-align: center;
 	margin-top: 0;
-	color: #444
+	color: #444;
+	margin-bottom:36px;
 }
 
 .author {
 	font-size: 110%;
 	color: #444;
-	margin-top: 36px;
+	margin-bottom: 0px;
+	margin-top: 12px;
 }
 
 .sectionText {
@@ -214,7 +223,7 @@ body {
 /* ########################################################## */
 /* ############# Animations and responsivity ################ */
 
-@media screen and (max-width: 489px) {
+@media screen and (max-width: 1050px) {
 	body {
 		font-size: 96%;
 	}
@@ -226,6 +235,9 @@ body {
 	}
 	#title {
 		padding: 36px 0px;
+	}
+	.container {
+		width: 80%;
 	}
 }
 

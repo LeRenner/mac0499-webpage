@@ -15,7 +15,10 @@
             <h1 class="mainTitle">MAC0499 - Trabalho de Formatura Supervisionado</h1>
             <h2 class="underTitle">Desenvolvimento de um sistema descentralizado de envio de mensagens</h2>
             <h2 class="underUnderTitle">Uma análise de dificuldades e limitações</h2>
-            <h2 class="author">João Renner Rudge, NUSP 11276221, 2024</h2>
+            <h2 class="author">Bacharelado em Ciência da Computação</h2>
+            <h2 class="author">Instituto de Matemática e Estatística - Universidade de São Paulo</h2>
+            <h2 class="author">Aluno: João Renner Rudge | Orientador: Daniel Macêdo Batista</h2>
+            <h2 class="author">São Paulo, 2024</h2>
 
             <br>
     
@@ -24,16 +27,28 @@
                 Este Trabalho de Conclusão de Curso tem como objetivo a análise das características positivas e negativas de sistemas descentralizados de envio de mensagens pela internet, entrando em detalhe sobre suas diferentes características, e posteriormente buscando a implementação de um protótipo funcional.
             </p>
             <p class="sectionText notoSans">
-                O contexto no qual esta monografia se encontra é significante, dado o processo intenso de centralização pelo qual a internet moderna tem passado. Seja no mercado de provedores de hospedagem web, na arquitetura do Sistema de Nomes de Domínios (DNS), ou em programas mensageiros amplamente utilizados, a adoção de protocolos e sistemas descentralizados tem diminuído muito ao longo das últimas duas décadas. Dessa forma, este trabalho busca discutir as vantagens e limitações de protocolos distribuidos de envio de mensagens via redes de computadores.
+                Esta monografia se insere no contexto da crescente centralização da internet moderna, que pode ser observada tanto no mercado de hospedagem web, na distribuição de Content Delivery Networks (CDNs), ou até mesmo na propagação da versão mais recente do protocolo de segurança Transport Layer Security (TLS), . Nos últimos 20 anos, a adoção de sistemas descentralizados caiu significativamente. <b>O objetivo deste trabalho é discutir as vantagens e limitações de protocolos distribuídos para envio de mensagens em redes de computadores.</b>
             </p>
             <p class="sectionText notoSans">
-                A monografia deste trabalho é organizada em cinco capítulos. O primeiro capítulo é dedicado a definir conceitos e definições importantes no contexto de um protocolo descentralizado. O seguinte é dedicado a analisar implementações de protocolos de envio de mensagens de código aberto já existentes, buscando entender suas diferentes características, funcionalidades, e desvantagens. O terceiro capítulo define, em detalhes, os requisitos que são escolhidos, e a arquitetura do projeto de protocolo que é desenvolvido ao longo deste trabalho. O quarto capítulo contém testes de performance e conclusões que podem ser tiradas da implementação que foi deselvolvida. Por fim, o último capítulo traz uma discussão mais abrangente sobre o projeto, e discute trabalhos futuros que podem ser feitos a partir deste.
+                A arquitetura híbrida proposta para o projeto de
+                protocolo utiliza serviços ocultos do Tor na comunicação
+                entre usuários. Cada usuário hospeda seu próprio serviço
+                oculto com um par de chaves público-privadas e expõe uma
+                API acessível por outros usuários, permitindo
+                funcionalidades como envio de mensagens, verificação de
+                status de amizade e estabelecimento de conexões P2P
+                diretas. A comunicação padrão esconde o IP, mas, para
+                reduzir latência, usuários podem optar por conexões diretas
+                ao adicionarem outros como "amigos". Nesse modelo, a
+                conexão P2P é estabelecida apenas quando ambos os
+                usuários estão online, possuem o chat aberto e confiam um
+                no outro.
             </p>
             <p class="sectionText notoSans">
-                A arquitetura híbrida proposta para o projeto de protocolo utiliza serviços ocultos do Tor na comunicação entre usuários. Cada usuário hospeda seu próprio serviço oculto com um par de chaves público-privadas e expõe uma API acessível por outros usuários, permitindo funcionalidades como envio de mensagens, verificação de status de amizade e estabelecimento de conexões P2P diretas. A comunicação padrão esconde o IP, mas, para reduzir latência, usuários podem optar por conexões diretas ao adicionarem outros como "amigos". Nesse modelo, a conexão P2P é estabelecida apenas quando ambos os usuários estão online, possuem o chat aberto e confiam um no outro.
-            </p>
-        
+                Este trabalho está dividido em cinco capítulos. O Capítulo 1 apresenta definições relevantes, e explica alguns conceitos importantes para a discussão dos protocolos que serão analisados. O Capítulo 2 analisa implementações já existentes de protocolos de envio de mensagens pela Internet. O Capítulo 3 apresenta a proposta de um protocolo de envio de mensagens descentralizado, e o Capítulo 4 apresenta detalhes sobre a implementação e resultados de testes. A monografia é finalizada com conclusões e ideias para trabalhos futuros no Capítulo 5.
             <br>
+
+            <iframe src="poster.pdf" width="100%" height="1120px" style="margin-top: 50px;"></iframe>
 
             <h2 class="downloadsTitle">Links relevantes (autocontido, .zip):</h2>
 
